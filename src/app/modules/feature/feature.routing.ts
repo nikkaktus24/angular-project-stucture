@@ -12,4 +12,4 @@ const routes: Routes = [
   }
 ];
 
-export const FeatureRoutingModule = RouterModule.forRoot(routes);
+export const FeatureRoutingModule = RouterModule.forChild(routes);
