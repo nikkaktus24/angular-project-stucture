@@ -1,0 +1,9 @@
+<div class="todo">
+  <div class="todo__title">
+<!--    {{ "PAGES.TEST_PAGE.TEST_MESSAGE" | translate }}-->
+    <button (click)="getCourses()">Get courses</button>
+    <div *ngFor="let item of items$ | async">
+      <h1>{{item}}</h1>
+    </div>
+  </div>
+</div>

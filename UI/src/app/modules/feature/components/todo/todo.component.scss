@@ -1,0 +1,7 @@
+@import 'src/app/styles/variables/colors';
+
+.todo {
+  &__title {
+    color: $color-orange;
+  }
+}

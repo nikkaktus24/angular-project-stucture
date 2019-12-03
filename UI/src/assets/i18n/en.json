@@ -1,0 +1,9 @@
+{
+  "PAGES": {
+    "TEST_PAGE": {
+      "TEST_MESSAGE": "TEST MESSAGE, LOOK TRANSLATION ON /ASSETS/i18N/EN.JSON"
+    }
+  },
+  "SHARED": {
+  }
+}

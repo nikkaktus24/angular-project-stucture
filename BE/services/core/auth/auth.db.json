@@ -1,0 +1,24 @@
+{
+	"users": [
+  {
+    "id": 1,
+    "fakeToken": "58ebfdf7f1f558c5c86e17f6",
+    "name": {
+      "first": "FirstName",
+      "last": "LastName"
+    },
+    "login": "flastname",
+    "password": "flastname"
+  },
+  {
+    "id": 2,
+    "fakeToken": "58ebfdf7ec92657b493b24da",
+    "name": {
+      "first": "Brock",
+      "last": "Beasley"
+    },
+    "login": "Morales",
+    "password": "id"
+  }
+]
+}
