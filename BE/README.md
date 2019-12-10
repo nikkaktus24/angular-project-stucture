@@ -214,7 +214,7 @@ Example: `courses/1`
 ```
 ___
 
-#### PATCH /courses
+#### PATCH /courses/#id
 
 This endpoint use for change appropriate course.
 
