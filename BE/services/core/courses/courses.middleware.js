@@ -6,15 +6,13 @@ const moment = require('moment');
 module.exports = (server) => {
 
 	router.get('/courses', (req, res, next) => {
-		let url_parts = url.parse(req.originalUrl, true),
-			query = url_parts.query,
-			from = query.start || 0,
-			to = +query.start + +query.count,
-			sort = query.sort,
-			queryStr = query.query,
-			filter = query.filter,
-			id = query.id,
-			courses = server.db.getState().courses;
+		let url_parts = url.parse(req.originalUrl, true);
+		const query = url_parts.query;
+		const from = query.start || 0;
+		let	to = from + parseInt(query.count, 10);
+		const sort = query.sort;
+		const id = query.id;
+		let	courses = server.db.getState().courses;
 
 		if (!!query.textFragment) {
 			courses = courses.filter((course) => course.name.concat(course.description).toUpperCase().indexOf(query.textFragment.toUpperCase()) >= 0);

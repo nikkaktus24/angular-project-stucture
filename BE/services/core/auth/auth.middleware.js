@@ -7,7 +7,6 @@ module.exports = (server) => {
 	router.post('/auth/login', (req, res, next) => {
 		let users = server.db.getState().users,
 			matchedUser = users.find((user) => {
-				console.log(user);
 				return user.login.toUpperCase() === req.body.login.toUpperCase();
 			});
 
@@ -23,7 +22,6 @@ module.exports = (server) => {
 	router.post('/auth/userinfo', (req, res, next) => {
 		let users = server.db.getState().users,
 			matchedUser = users.find((user) => {
-				console.log(user);
 				return user.fakeToken === req.body.token;//('Authorization');
 			});
 			

@@ -10,6 +10,10 @@
 
 To using all endpoints except [/auth/login](#post-authlogin) you should pass `Authorization` to headers.
 
+##Files
+
+To make any changes to Mock DB, you should go to ```Services/#name/#name.db.json```. Feel free to introduce changes.
+
 ## MODEL USING IN DOCUMENTATION
 
 ### Course model
@@ -154,8 +158,7 @@ This endpoint use for getting available courses
 | -------------:|:--------:|:-------:| --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |    `start` | non-required | number  | Courses from index (if empty start will be 0).                                                                     |                                                                |
 |    `count` | non-required | number  | Appropriate count of courses (if empty count will be length of courses array).                                                                     |                                                                |
-|    `sort` | non-required | string  | Sorting key.                                                                     |                                                                |
-|    `filter` | non-required | string  | Filter key.                                                                     |                                                                |
+|    `sort` | non-required | string  | Sorting key.                                                                     |                                                                |                                                                |                                                                |
 |    `textFragment` | non-required | string  | Text fragment for searching.                                                                     |                                                                |
 
 **Response** [[User Model]](#user-model)
