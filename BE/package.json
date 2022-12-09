@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.14.1",
+    "express": "^4.17.3",
     "json-server": "^0.9.4",
     "lodash": "^4.17.4",
     "moment": "^2.24.0",
